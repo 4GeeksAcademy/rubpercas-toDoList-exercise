@@ -1,3 +1,20 @@
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2017/07/22/06/11/travel-2527955_1280.jpg");
+    margin: 0;
+    height: 100vh; /* 100% de la altura de la viewport */
+    background-size: cover; /* Cubre toda el área, recortando si es necesario */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.container {
+    height: 80vh;
+    width: 120vh;
+    background-image: url("https://cdn.pixabay.com/photo/2014/04/02/17/04/blackboard-307835_1280.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 /* 
 
