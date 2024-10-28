@@ -52,13 +52,15 @@ const ToDoList = () => {
       <div className="row mt-2">
         <div id="grupo">
           <div className="form-group d-flex">
+            <div className="field">
             <input
               type="text"
-              className="form-control"
               placeholder="Add a task"
               value={newTask}
               onChange={handleInputChange}
             />
+            <div className="line"></div>
+            </div>
             <button
               className="btn btn-primary ms-2"
               onClick={addTask}>
