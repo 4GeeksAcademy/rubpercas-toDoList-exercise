@@ -12,11 +12,29 @@ body {
 }
 
 .container {
-    height: 80vh;
+    height: 90vh;
     width: 120vh;
     background-image: url("https://cdn.pixabay.com/photo/2014/04/02/17/04/blackboard-307835_1280.png");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+
+.list li button {
+    float: right; /* O flex: 0 1 auto; dentro de un contenedor flex */
+}
+
+.list li {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a ambos extremos */
+    align-items: center; /* Centra los elementos verticalmente */
 }
 
 input {
@@ -27,7 +45,7 @@ input {
     width: 80vw;
     max-width: 400px;
     font-size: 1.5em;
-    transition: padding 0.3s 0.2s ease;
+    transition: padding 0.3s 0.2s ease-in-out;
 
     &:focus {
         padding-bottom: 5px;
@@ -59,7 +77,7 @@ input {
             height: 3px;
 
             transform: scalex(0);
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease-in-out;
 
             background: #818181;
         }
@@ -68,12 +86,15 @@ input {
 
 ::placeholder {
     color: rgb(255, 255, 255);
-    opacity: 1; /* Firefox */
-  }
-  
-  ::-ms-input-placeholder { /* Edge 12 -18 */
+    opacity: 1;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Edge 12 -18 */
     color: rgb(255, 255, 255);
-  }
+}
+
 /* 
 
     You can write your own styles here...
