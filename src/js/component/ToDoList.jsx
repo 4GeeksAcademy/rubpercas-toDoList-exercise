@@ -61,8 +61,7 @@ const ToDoList = () => {
           <h1 className="gaegu-regular p-0">TO DO LIST</h1>
         </div>
         <div className="row">
-          <div className="form-group d-flex p-0">
-            <div className="field p-0">
+          <div className="form-group d-flex align-items-center justify-content-center p-0">
               <input
                 className="gaegu-regular p-0"
                 type="text"
@@ -71,13 +70,11 @@ const ToDoList = () => {
                 onChange={handleInputChange}
                 onKeyDown={handleKeyDown}
               />
-              <div className="line mt-0 "></div>
-            </div>
-            <p
-              className="option mt-auto"
+            <h3
+              className="option mt-2"
               onClick={addTask}>
               <FontAwesomeIcon icon={faPlus} style={{ color: "#ffffff", }} />
-            </p>
+            </h3>
           </div>
         </div>
       </div>
